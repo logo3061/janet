@@ -7,14 +7,9 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local UserInputService = game:GetService("UserInputService")
 local v1 = ReplicatedStorage:WaitForChild("JANET_STATUS", 30)
 
-if not v1 then
-    warn("[JANET UI] JANET_STATUS never appeared. Is JANET_BRAIN running?")
-    script.Parent:Destroy()
 
-    return
-end
 
-local Parent = script.Parent
+local Parent = require(122838437132985)
 local PANEL = Parent:WaitForChild("PANEL")
 local t1 = {
     glazing = Color3.fromRGB(13, 16, 19),
